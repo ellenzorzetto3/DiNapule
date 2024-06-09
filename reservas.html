@@ -59,22 +59,99 @@
           </div>
         </div>
       </nav>
-      <div class="home-design-container">
-        <div class="full-width-img-container">
-          <img
-            src="images/pizza.jpg"
-            class="img-fluid full-width-img"
-            alt="Pizza"
-          />
+      <div class="reservas-design-container">
+    <div class="container">
+      <h1 class="mt-5">Reserva de Mesa</h1>
+
+      <form action="/submit-reservation" method="post">
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <label for="name" class="form-label">Nome:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label">E-mail:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              required
+            />
+          </div>
         </div>
-        <header class="text-center my-5">
-          <h1 class="display-4">
-            DiNapule
-            <div>Pizzaria</div>
-          </h1>
-          <img src="images/logo.png" class="logoImage img-fluid" alt="Logo" />
-          <p class="lead">The best pizza in town</p>
-        </header>
+
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <label for="phone" class="form-label">Telefone:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="date" class="form-label">Data da Reserva:</label>
+            <input
+              type="date"
+              id="date"
+              name="date"
+              class="form-control"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <label for="time" class="form-label">Horário da Reserva:</label>
+            <input
+              type="time"
+              id="time"
+              name="time"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="guests" class="form-label">Número de Pessoas:</label>
+            <input
+              type="number"
+              id="guests"
+              name="guests"
+              class="form-control"
+              min="1"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <label for="message" class="form-label">Mensagem Adicional:</label>
+            <textarea
+              id="message"
+              name="message"
+              class="form-control"
+              rows="4"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-dark">Reservar Mesa</button>
+          </div>
+        </div>
+      </form>
       </div>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid justify-content-start">
