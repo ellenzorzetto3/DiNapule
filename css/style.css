@@ -11,8 +11,7 @@ body {
   color: white;
 }
 
-.navLogo,
-.navLogo2 {
+.navLogo {
   width: 60px;
 }
 
@@ -107,6 +106,32 @@ body {
 .contato-design-container p {
   margin-bottom: 60px;
 }
+
+footer {
+  background-color: #212529;
+}
+
+.footerIcons {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background-color: #212529;
+  padding: 30px;
+  gap: 60px;
+}
+
+.footerIcons a {
+  color: white;
+  transition: all 150ms ease-in-out;
+}
+
+.footerIcons a:hover {
+  color: black;
+  opacity: 0.8;
+}
+
 @media (max-width: 768px) {
   body {
     margin-bottom: 0;
@@ -125,9 +150,6 @@ body {
 
   .restaurante-design-container p {
     font-size: 1rem;
-  }
-  .navLogo2 {
-    display: none;
   }
 }
 
@@ -148,9 +170,5 @@ body {
 
   .logoImage {
     width: 80px;
-  }
-
-  .navLogo2 {
-    display: none;
   }
 }
