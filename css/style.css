@@ -151,6 +151,9 @@ footer {
   .restaurante-design-container p {
     font-size: 1rem;
   }
+  .gitLink {
+    font-size: 25px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -171,4 +174,23 @@ footer {
   .logoImage {
     width: 80px;
   }
+
+  .gitLink {
+    font-size: 25px;
+  }
+}
+
+.gitLink {
+  font-size: 15px;
+}
+
+.gitLink a {
+  text-decoration: none;
+  color: white;
+  transition: all 100ms ease-in-out;
+}
+
+.gitLink a:hover {
+  text-decoration: underline;
+  color: pink;
 }
